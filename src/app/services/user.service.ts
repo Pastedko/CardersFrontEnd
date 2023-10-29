@@ -12,18 +12,18 @@ import { User } from '../user';
 export class UserService {
 
   constructor(private http:HttpClient,private router:Router,private socket:Socket) { }
-  private _createUrl="http://localhost:3000/create";
-  private _getGamesUrl="http://localhost:3000/getAll";
-  private _getGameUrl="http://localhost:3000/getGame/";
-  private _joingGameUrl="http://localhost:3000/join/";
-  private _getUsernameUrl="http://localhost:3000/getUser/";
-  private _getGuestUrl="http://localhost:3000/getGuest/";
-  private _leaveGameUrl="http://localhost:3000/leaveGame/";
-  private _changeTeamUrl="http://localhost:3000/change/";
-  private _updateProfile="http://localhost:3000/updateWithPicture";
-  private _updateProfile2="http://localhost:3000/updateWithoutPicture";
-  private _getPicure="http://localhost:3000/getPicture";
-  private _removePicture="http://localhost:3000/removePicture"
+  private _createUrl="https://carders-app.onrender.com/create";
+  private _getGamesUrl="https://carders-app.onrender.com/getAll";
+  private _getGameUrl="https://carders-app.onrender.com/getGame/";
+  private _joingGameUrl="https://carders-app.onrender.com/join/";
+  private _getUsernameUrl="https://carders-app.onrender.com/getUser/";
+  private _getGuestUrl="https://carders-app.onrender.com/getGuest/";
+  private _leaveGameUrl="https://carders-app.onrender.com/leaveGame/";
+  private _changeTeamUrl="https://carders-app.onrender.com/change/";
+  private _updateProfile="https://carders-app.onrender.com/updateWithPicture";
+  private _updateProfile2="https://carders-app.onrender.com/updateWithoutPicture";
+  private _getPicure="https://carders-app.onrender.com/getPicture";
+  private _removePicture="https://carders-app.onrender.com/removePicture"
 
   createLobby(lobby:Object){
     return this.http.post<any>(this._createUrl,lobby,{

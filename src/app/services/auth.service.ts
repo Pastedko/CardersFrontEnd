@@ -5,9 +5,9 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
-  private _registerUrl="http://localhost:3000/register";
-  private _loginUrl="http://localhost:3000/login"
-  private _guestUrl="http://localhost:3000/guest"
+  private _registerUrl="https://carders-app.onrender.com/register";
+  private _loginUrl="https://carders-app.onrender.com/login"
+  private _guestUrl="https://carders-app.onrender.com/guest"
   constructor(private http:HttpClient,private router:Router) { }
   registerUser(user:object){
    
