@@ -4,12 +4,9 @@ import { AuthService } from '../services/auth.service';
 import { GameService } from '../services/game.service';
 import { SocketService } from '../services/socket.service';
 import { UserService } from '../services/user.service';
-import { exhaustAll, interval, Observable } from 'rxjs';
+import {  interval } from 'rxjs';
 import { GameSocketService } from '../services/game-socket.service';
 import { Card } from './card';
-import { Game } from '../game';
-import { i18nMetaToJSDoc } from '@angular/compiler/src/render3/view/i18n/meta';
-import { User } from '../user';
 
 @Component({
   selector: 'app-game',
